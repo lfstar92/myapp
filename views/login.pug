@@ -1,0 +1,27 @@
+doctype html
+html(lang="zh-CN")
+  meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=no")
+  head
+    title=title
+    link(href="/stylesheets/bootstrap.min.css", rel="stylesheet")
+    link(href="/stylesheets/login.css", rel="stylesheet")
+    script(src="javascripts/jquery1.12.4.min.js")
+    script(src="javascripts/bootstrap.min.js")
+  body
+    header(class="header")
+      h2 用户登录
+    form(class="form-horizontal", action="", method="post")
+      div(class="form-group")
+        label(for="username", class="col-sm-2 control-label") 用户名
+        div(class="col-sm-9")
+          input(type="text", class="form-control", id="username", placeholder="请输入用户名", name="username")
+      div(class="form-group")
+        label(for="password", class="col-sm-2 control-label") 密码
+        div(class="col-sm-9")
+          input(type="password", class="form-control", id="password", placeholder="请输入密码", name="password")
+      div(class="form-group")
+        div(class="col-sm-offset-2 col-sm-9")
+          input(type="button", class="btn btn-default", value="登录")
+
+    
