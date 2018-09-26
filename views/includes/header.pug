@@ -1,0 +1,12 @@
+header(class="header")
+  div(class="logo col-sm-12")
+    img(class="logo-img", src="/images/xinyixue.png", alt="logo", srcset="")
+    span(class="logo-desc") 这是心一雪的博客
+  div(class="link-wrap")
+    ul(class="link-list")
+      each item in linkList
+        li(class="link-item col-sm-3")
+          if item.active
+            a(class="active", href=item.href)=item.name
+          else
+            a(href=item.href)=item.name
