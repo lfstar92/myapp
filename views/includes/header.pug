@@ -1,12 +1,15 @@
-header(class="header")
-  div(class="logo col-sm-12")
-    img(class="logo-img", src="/images/xinyixue.png", alt="logo", srcset="")
-    span(class="logo-desc") 这是心一雪的博客
-  div(class="link-wrap")
-    ul(class="link-list")
-      each item in linkList
-        li(class="link-item col-sm-3")
-          if item.active
-            a(class="active", href=item.href)=item.name
-          else
-            a(href=item.href)=item.name
+header(id="header")
+  div(class="blog-title col-sm-12")
+    h1(class="blog-name")
+      a(class="maintitle", href="/") xinyixue666
+    h2(class="blog-signature") 是誓者，当自强不息。 唯忍者，定笑傲群雄
+  nav(class="navigator")
+    ul(class="nav-list")
+      li(class="nav-item")
+        a(id="blog_nav_myhome", class="menu") 首页
+      li(class="nav-item")
+        a(id="blog_nav_newpost", class="menu") 新随笔
+      li(class="nav-item")
+        a(id="blog_nav_admin", class="menu") 管理
+      li(class="nav-item")
+        a(id="blog_nav_contact", class="menu") 联系
