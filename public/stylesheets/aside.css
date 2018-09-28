@@ -1,0 +1,75 @@
+#sideBar {
+  width: 250px;
+  min-width: 250px;
+  margin-left: 20px;
+}
+/* siderBar公共样式 */
+.side_block {
+  background: #fff;
+  margin-bottom: 20px;
+  box-shadow: 1px 2px 3px #dddddd;
+}
+.side_block_hidden {
+  margin-bottom: 0;
+}
+.side_block:last-child {
+  margin-bottom: 0;
+}
+.catListTitle {
+  margin: 0;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+.catListBox {
+  padding: 15px 20px;
+  font-size: 12px;
+}
+.catListBox a {
+  color: #000000;
+}
+.catListBox a:hover {
+  color: rgb(255, 126, 79);
+}
+/* 公告 */
+
+.newsItem {
+  line-height: 20px;
+  font-size: 12px;
+}
+/* 搜索 */
+.search_box {
+  font-size: 12px;
+}
+
+#searchText {
+  height: 25px;
+  width: 150px;
+  padding: 5px;
+  margin-right: 10px;
+  outline-color: rgb(255, 126, 79);
+}
+#searchBtn {
+  background: #fff;
+  padding: 0 5px;
+  height: 25px;
+  border: 1px solid #ddd;
+}
+
+/* 常用链接 */
+.shortcutlistbox {
+  line-height: 20px;
+}
+
+/* 我的标签 */
+
+/* 随笔档案 */
+
+/* 最新评论 */
+
+/* 阅读排行榜 */
+
+/* 评论排行榜 */
+
+/* 推荐排行榜 */
