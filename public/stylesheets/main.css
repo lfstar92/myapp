@@ -1,6 +1,7 @@
 html, body {
   font-size: 14px;
-  font-family:  '微软雅黑','Courier New', Courier, monospace, Arial, Helvetica, sans-serif; 
+  font-family:  '微软雅黑','Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
+  background: #eeeeee;
 }
 
 html, body, p, ul, li, ol, a {
@@ -14,4 +15,35 @@ ul, li {
 
 a {
   text-decoration: none;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.container {
+  background: url('/images/bg.png') no-repeat;
+  background-position: 50% 0%;
+}
+
+#main {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  text-align: center;
+  color: #999;
+  line-height: 30px;
+  height: 30px;
+  padding-top: 50px;
+  margin: 10px 0;
+  box-sizing: content-box;
+  background: url('/images/fo.png') no-repeat;
+  background-position: 10% 0%;
 }
