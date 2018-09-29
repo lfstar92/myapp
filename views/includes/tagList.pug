@@ -1,0 +1,8 @@
+div(class="tagListContent")
+  h3(class="tagListTitle") 我的标签列表
+  div(class="taglistwrap")
+    ul(class="taglistbox clearfix")
+      - for (var i = 1; i<15;i++)
+        li(class="taglist")
+          a(href="", class="tagLink") javascript
+          span(class="tagCount") (#{i})
