@@ -6,13 +6,14 @@
 
 /* entryList */
 
-.entryList a:hover{
+.entryItemCommom a:hover {
   color: coral;
 }
 
 .entrylistTitle {
   background: #fff;
   box-shadow: 1px 2px 3px #dddddd;
+  margin: 0;
   margin-bottom: 15px;
   padding: 15px 20px;
   font-weight: bold;
@@ -20,16 +21,33 @@
   color: #000000;
 }
 
-.entryItem {
+.entryItemCommom {
   background: #fff;
   box-shadow: 1px 2px 3px #dddddd;
   margin-bottom: 25px;
+}
+
+.entryItemContent {
   padding: 15px 20px;
   font-size: 12px;
 }
 
-.entryItem:last-child {
+.entryItemCommom:last-child {
   margin-bottom: 0;
+}
+
+.monthTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+.monthTitle a {
+  text-indent: 20px;
+  line-height: 30px;
+  padding-top: 20px;
+  display: inline-block;
+  color: #000000;
+  text-decoration: none;
 }
 /* .entryItemTitleWrap {
   width: 100%;
@@ -38,12 +56,16 @@
 .entryItemTitle {
   display: inline-block;
   width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-indent: 45px;
   font-size: 16px;
   color: black;
   font-weight: bold;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  background: url(/images/titlebg.png) no-repeat;
 }
 
 .entryItemSummary {
@@ -111,4 +133,29 @@
 /* pagerList */
 .pagerList {
   text-align: right;
+}
+
+/* tagList */
+
+.tagListContent {
+  background: #fff;
+  padding: 20px 0;
+  box-shadow: 1px 2px 3px #dddddd;
+}
+.tagListTitle {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  line-height: 50px;
+}
+.taglistwrap {
+  margin: 0 20px;
+}
+
+.taglist {
+  width: 25%;
+  float: left;
+  height: 30px;
+  line-height: 30px;
 }
