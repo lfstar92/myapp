@@ -1,0 +1,68 @@
+div(class="postArticle")
+  div(class="postArticleTitle")
+    a(href="", class="postArticleTitleLink") vue-scroller实现vue单页面的上拉加载和下拉刷新问题
+  div(class="postArticleBody")
+    div(class="blogpPostBody")
+      p="在vue中如何简单的实现页面的上拉加载和下拉刷新，在这里我推荐使用vue-scrolle插件。"
+      p="vue-scrolle的基本使用方法："
+      p="1.下载"
+      p=" "
+      p="npm i vue-scroller -D"
+      p=" "
+      p="2.导包"
+      p="import Vue from 'vue'"
+      p="import VueScroller from 'vue-scroller'"
+      p="Vue.use(VueScroller)"
+      p="3.项目使用"
+      p="  <scroller :on-infinite=\"infinite\""
+      p="            :on-refresh=\"refresh\""
+      p="　　         ref=\"my_scroller\">"
+      p="       <!-- 项目内容 -->"
+      p="</scroller>"
+      p="<script>"
+      p="　　export default {"
+      p="　　　　methods:{"
+      p="　　　　　　infinite(done) {   //上拉加载"
+      p="　　　　　　　　if(this.noData) {"
+      p="　　　　　　　　　　setTimeout(()=>{"
+      p="　　　　　　　　　　　　this.$refs.my_scroller.finishInfinite(2);"
+      p="　　　　　　　　　　})"
+      p="　　　　　　　　　　return;"
+      p="　　　　　　　　}"
+      p="　　　　　　　　let self = this;"
+      p="　　　　　　　　let i=1;"
+      p=" "
+      p="　　　　　　　　let start = this.list.length;"
+      p="　　　　　　　　setTimeout(() => {"
+      p="　　　　　　　　　　for(var k=0;k<9;k++){"
+      p="                    self.list.push(k)"
+      p="　　　　　　　　　　}"
+      p="　　　　　　　　　　i++;"
+      p="　　　　　　　　　　if(start/i < 9) {"
+      p="　　　　　　　　　　　　self.noData = \"没有更多数据\""
+      p="　　　　　　　　　　}"
+      p="　　　　　　　　　　self.$refs.my_scroller.resize();"
+      p="　　　　　　　　　　done()"
+      p="　　　　　　　　}, 1500)"
+      p="　　　　　　},"
+      p="　　　　　　refresh:function(){         //下拉刷新"
+      p="　　　　　　　　console.log('refresh')"
+      p="　　　　　　　　this.timeout = setTimeout(()=>{"
+      p="　　　　　　　     　this.$refs.my_scroller.finishPullToRefresh()"
+      p="　　　　　　　　}, 1500)"
+      p="　　　　　　}"
+      p=" "
+      p="　　　　}"
+      p="　　}"
+      p="</script>"
+  div(class="postArticleDesc")
+    div(class="entryItemDesc") 
+      |posted @ 
+      a(href="") #{moment(Date.now()).format('YYYY-MM-DD HH:mm:ss')}
+      |
+      |海盗的小秘密 阅读(43) |
+      |
+      a(href="") 评论 (0)
+      |
+      |
+      a(href="") 编辑
