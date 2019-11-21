@@ -1,6 +1,14 @@
 div(class="mainContent")
   div(class="my-post")
-  //- include ./entryList
-  include ./postList
-  
-  
+  if showIndexList
+    -for(let i = 0; i <= 4; i++)
+      include ./entryItemIndex
+  if showEntryList
+    include ./entryList
+  if showPostList
+    include ./postList
+  if showTagList
+    include ./tagList
+  if showArticle
+    include ./article
+    

@@ -3,16 +3,9 @@ nav(class="pagerList", aria-label="Page navigation")
     li(class="pagerPrev")
       a(href="", aria-label="Previous")
         span(aria-hidden="true") 上一页
-    li(class="pagerNum")
-      a(href="#") 1
-    li(class="pagerNum")
-      a(href="#") 2
-    li(class="pagerNum")
-      a(href="#") 3
-    li(class="pagerNum")
-      a(href="#") 4
-    li(class="pagerNum")
-      a(href="#") 5
+    - for (let i = 1; i <= 5; i++)
+      li(class="pagerNum")
+        a(href="")=i
     li(class="pagerNext")
       a(href="", aria-label="Next")
         span(aria-hidden="true") 下一页
